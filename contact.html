@@ -25,14 +25,15 @@
       <div class="h2">Contact Us</div>
       <div style="display:grid; grid-template-columns:1fr 320px; gap:20px;">
         <div>
-          <form action="#" method="post" onsubmit="alert('Form submitted (placeholder). Please wire form to your backend)'); return false;">
+	<form id="contact-form" action="https://formspree.io/f/mzzknvkd" method="post">
             <label for="name">Name</label><br/>
             <input id="name" name="name" required style="width:100%; padding:8px; margin-top:6px; margin-bottom:10px; border-radius:6px; border:1px solid #d7e6e3"><br/>
             <label for="email">Email</label><br/>
             <input id="email" name="email" type="email" required style="width:100%; padding:8px; margin-top:6px; margin-bottom:10px; border-radius:6px; border:1px solid #d7e6e3"><br/>
             <label for="message">Message</label><br/>
             <textarea id="message" name="message" rows="6" style="width:100%; padding:8px; margin-top:6px; margin-bottom:10px; border-radius:6px; border:1px solid #d7e6e3"></textarea><br/>
-            <button class="btn" type="submit">Send Message</button>
+            <input type="hidden" name="_next" value="https://www.manavsewakosh.org/thank-you.html">
+	    <button class="btn" type="submit">Send Message</button>
           </form>
         </div>
         <aside class="card">
